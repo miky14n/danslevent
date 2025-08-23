@@ -1,19 +1,37 @@
 @import "tailwindcss";
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Paleta ordenada */
+  --color-primary: #263173;
+  --color-secondary: #08041b;
+  --color-tertiary: #E2D287;
+  --color-quaternary: #D5D5D5;
+  --color-quinary: #C8782E;
+
+  /* Defaults */
+  --background: var(--color-primary);
+  --foreground: var(--color-secondary);
 }
 
 @theme inline {
+  /* Enlazamos a Tailwind */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-tertiary: var(--color-tertiary);
+  --color-quaternary: var(--color-quaternary);
+  --color-quinary: var(--color-quinary);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    /* Ajustes en dark mode */
     --background: #0a0a0a;
     --foreground: #ededed;
   }
