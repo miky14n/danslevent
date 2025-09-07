@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import Carousel from "@/components/Carousel";
 import ModalAlert from "@/components/ModalAlert";
-import ProductoCard from "@/components/ProductCard";
+import ProductoCard from "@/components/ProductoCardAnimation";
 import VideoEmbed from "@/components/VideoEmbed";
 import Image from "next/image";
 

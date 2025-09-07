@@ -8,10 +8,12 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-8">
         {/* Seguinos */}
         <div>
-          <h3 className="font-semibold mb-4">Síguenos</h3>
+          <h3 className="font-semibold mb-4 items-center justify-center">
+            Síguenos
+          </h3>
           <div className="flex gap-3">
             <Link
-              href="https://www.instagram.com/industrias_delarocha?igsh=d3oyYW91MzF4dHN0"
+              href="https://www.instagram.com/danslevent_ "
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -19,7 +21,7 @@ export default function Footer() {
             </Link>
             <Tiktok />
             <Link
-              href="https://m.facebook.com/p/Industrias-De-La-Rocha-61566914166399/"
+              href="https://www.facebook.com/profile.php?id=61579741095801"
               target="_blank"
               rel="noopener noreferrer"
             >
