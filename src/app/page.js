@@ -1,9 +1,117 @@
+/* eslint-disable prettier/prettier */
+import Carousel from "@/components/Carousel";
+import ModalAlert from "@/components/ModalAlert";
+import ProductoCard from "@/components/ProductCard";
+import VideoEmbed from "@/components/VideoEmbed";
 import Image from "next/image";
 
 export default function Home() {
+  const imagesCarousel = [
+    "/sidecar.png",
+    "/Brandy-Alexander.png",
+    "/French-Conection.png",
+  ];
   return (
-    <div >
-      hola
+    <div className="text-tertiary">
+      <ModalAlert />
+
+      {/* Video */}
+      <div className="mt-7">
+        <VideoEmbed src="intro.mp4" autoPlay muted loop controls={false} />
+      </div>
+
+      {/* Intro */}
+      <div className="px-4 md:px-10 lg:px-20 text-center">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">
+          ¿Por qué celebrar junto a Dans Le Vent?
+        </h1>
+        <p className="text-lg md:text-2xl max-w-3xl mx-auto">
+          Un brindis con Dans Le Vent es un tributo al arte y la elegancia
+          francesa. Suave, refinado y lleno de carácter, es la elección perfecta
+          para momentos que merecen ser inolvidables.
+        </p>
+      </div>
+
+      {/* Sección destilería */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 md:p-12">
+        <div className="flex flex-col justify-center items-center">
+          <h1 className="text-2xl md:text-3xl font-bold mb-4">
+            LO MEJOR DE LA DESTILERÍA FRANCESA
+          </h1>
+          <p className="text-base md:text-xl leading-relaxed items-center">
+            En Dans Le Vent, el arte de la destilación francesa se combina con
+            un profundo respeto por el tiempo y la tradición. Cada gota refleja
+            el savoir-faire transmitido por generaciones, donde la precisión, la
+            paciencia y la pasión transforman la uva en un brandy de carácter
+            inigualable.
+          </p>
+        </div>
+        <div className="flex justify-center">
+          <Image
+            src="/viniedo1.png"
+            alt="viñedo"
+            width={600}
+            height={600}
+            className="object-cover rounded-xl "
+            quality={100}
+          />
+        </div>
+      </div>
+
+      {/* Producto */}
+      <div className="px-4">
+        <ProductoCard
+          titulo="VSOP Brandy"
+          descripcion="Destilado 100% de uvas francesas y añejado de al menos 4 años en barricas de roble de Tronçais. Suave, elegante y con notas de vainilla y roble tostado."
+          textoVertical="Nuestro Producto"
+          botellaSrc="/combine.png"
+        />
+      </div>
+
+      {/* Cocteles */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 md:p-12">
+        <div className="flex flex-col justify-center text-center md:text-left">
+          <h1 className="text-2xl md:text-3xl font-bold mb-4">CÓCTELES</h1>
+          <p className="text-base md:text-xl leading-relaxed max-w-md mx-auto md:mx-0">
+            El arte de crear recetas junto a Dans Le Vent, dejando volar la
+            imaginación.
+          </p>
+        </div>
+        <div className="flex justify-center">
+          <Carousel
+            images={imagesCarousel}
+            height="h-[400px] md:h-[550px]"
+            widthImg={300}
+            heightImg={300}
+          />
+        </div>
+      </div>
+
+      {/* Legado */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 md:p-12 items-center">
+        <div className="flex justify-center">
+          <Image
+            src={"/Aroundpicture.png"}
+            width={400}
+            height={400}
+            alt="legado"
+            className="w-full max-w-sm md:max-w-md"
+          />
+        </div>
+        <div className="flex flex-col text-center md:text-left">
+          <h1 className="text-2xl md:text-3xl font-bold mb-4">
+            NUESTRO LEGADO
+          </h1>
+          <h2 className="text-lg md:text-2xl leading-relaxed mb-4 max-w-md mx-auto md:mx-0">
+            Una tradición francesa reinterpretada con elegancia
+          </h2>
+          <p className="text-sm md:text-base max-w-md mx-auto md:mx-0">
+            Dans Le Vent VSOP, elaborado 100% con uvas de Coñac y añejado en
+            roble Troncáis, combina tradición artesanal y excelencia francesa en
+            cada gota.
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
