@@ -21,9 +21,10 @@ export default function Navbar() {
             >
               Nuestros Productos
             </Link>
+            {/*}
             <Link href="/cocteles" className="hover:text-yellow-400 transition">
               Nuestros Cócteles
-            </Link>
+            </Link>*/}
           </div>
 
           {/* Logo centrado SIEMPRE */}
@@ -47,12 +48,13 @@ export default function Navbar() {
             >
               Acerca de Nosotros
             </Link>
+            {/*}
             <Link
               href="/estilo-vida"
               className="hover:text-yellow-400 transition"
             >
               Estilo de Vida
-            </Link>
+            </Link>*/}
           </div>
 
           {/* Botón hamburguesa (solo mobile, alineado derecha) */}
@@ -74,13 +76,14 @@ export default function Navbar() {
             >
               Nuestros Productos
             </Link>
+            {/*}
             <Link
               href="/cocteles"
               onClick={() => setIsOpen(false)}
               className="hover:text-yellow-400"
             >
               Nuestros Cócteles
-            </Link>
+            </Link>*/}
             <Link
               href="/acerca-de-nosotros"
               onClick={() => setIsOpen(false)}
@@ -88,13 +91,14 @@ export default function Navbar() {
             >
               Acerca de Nosotros
             </Link>
+            {/*}
             <Link
               href="/estilo-vida"
               onClick={() => setIsOpen(false)}
               className="hover:text-yellow-400"
             >
               Estilo de Vida
-            </Link>
+            </Link>*/}
           </div>
         )}
       </div>
