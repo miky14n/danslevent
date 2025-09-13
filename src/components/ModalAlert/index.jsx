@@ -41,7 +41,7 @@ export default function AgeVerificationModal() {
             </ModalHeader>
             <ModalBody>
               <Image
-                src={"/log-danslevent.png"}
+                src={"/images/log-danslevent.png"}
                 width={600}
                 height={600}
                 alt="Imagen banner"

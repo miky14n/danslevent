@@ -6,17 +6,17 @@ import InfoCard from "@/components/InfoCard";
 export default function VsopProductView() {
   const cocktails = [
     {
-      image: "/sidecar.png",
+      image: "/images/sidecar.png",
       name: "Sidecar",
       link: "",
     },
     {
-      image: "/Brandy-Alexander.png",
+      image: "/images/Brandy-Alexander.png",
       name: "Brandy Alexander",
       link: "",
     },
     {
-      image: "/French-Conection.png",
+      image: "/images/French-Conection.png",
       name: "French Connection",
       link: "",
     },

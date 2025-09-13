@@ -7,9 +7,9 @@ import Image from "next/image";
 
 export default function Home() {
   const imagesCarousel = [
-    "/sidecar.png",
-    "/Brandy-Alexander.png",
-    "/French-Conection.png",
+    "/images/sidecar.png",
+    "/images/Brandy-Alexander.png",
+    "/images/French-Conection.png",
   ];
   return (
     <div className="text-tertiary">
@@ -54,7 +54,7 @@ export default function Home() {
         </div>
         <div className="relative w-full h-[400px] md:h-auto md:min-h-[500px] rounded-xl overflow-hidden shadow-lg">
           <Image
-            src="/viniedo1.png"
+            src="/images/viniedo1.png"
             alt="viñedo"
             fill
             className="object-cover rounded-xl "
@@ -69,7 +69,7 @@ export default function Home() {
           titulo="VSOP Brandy"
           descripcion="Destilado 100% de uvas francesas y añejado de al menos 4 años en barricas de roble de Tronçais. Suave, elegante y con notas de vainilla y roble tostado."
           textoVertical="Nuestro Producto"
-          botellaSrc="/combine.png"
+          botellaSrc="/images/combine.png"
           navigation="/productos/vsop"
         />
       </div>

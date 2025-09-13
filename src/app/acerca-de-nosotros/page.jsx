@@ -77,7 +77,7 @@ export default function AboutUs() {
       </div>
 
       <InfoSection
-        src={"/atardecer.png"}
+        src={"/images/atardecer.png"}
         title={"Diferenciación"}
         text={
           "De La Rocha LLC se destaca en el mercado por traer el primer brandy a Bolivia, un producto que es esencialmente un coñac de alta calidad, incluso producido en la ciudad del coñac, siendo un brandy francés 100%. Además, estamos trabajando en proyectos emocionantes."
