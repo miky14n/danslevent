@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Carousel = ({
   images,
@@ -73,23 +74,25 @@ const Carousel = ({
         onTouchStart={handleDragStart}
         onTouchEnd={handleDragEnd}
       >
-        {images.map((src, index) => (
+        {images.map((src, index, navigation) => (
           <div
             key={index}
             className={`absolute inset-0 flex items-center justify-center transition-opacity duration-700 ease-in-out ${
               index === current ? "opacity-100" : "opacity-0"
             }`}
           >
-            <Image
-              src={src}
-              alt={`Slide ${index + 1}`}
-              width={widthImg}
-              height={heightImg}
-              // evita que la imagen intercepte el drag y que se "arrastre" como ghost
-              draggable={false}
-              className="object-contain max-h-full max-w-full rounded-xl relative z-10 pointer-events-none"
-              priority={index === 0}
-            />
+            <Link href={navigation}>
+              <Image
+                src={src}
+                alt={`Slide ${index + 1}`}
+                width={widthImg}
+                height={heightImg}
+                // evita que la imagen intercepte el drag y que se "arrastre" como ghost
+                draggable={false}
+                className="object-contain max-h-full max-w-full rounded-xl relative z-10 pointer-events-none"
+                priority={index === 0}
+              />
+            </Link>
           </div>
         ))}
       </div>

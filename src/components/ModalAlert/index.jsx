@@ -25,13 +25,13 @@ export default function AgeVerificationModal() {
       onClose={() => {}}
       backdrop="blur"
       classNames={{
-        base: "footer-font bg-quaternary text-quaternary max-w-sm sm:max-w-md rounded-2xl shadow-lg",
+        base: "footer-font bg-secondary text-quaternary max-w-sm sm:max-w-md rounded-2xl shadow-lg",
         header: "text-lg sm:text-xl font-bold text-center",
         body: " sm:text-base leading-relaxed text-center",
         footer: "flex gap-4 justify-center mt-4",
       }}
       hideCloseButton={true}
-      size="2xl"
+      size="3xl"
     >
       <ModalContent>
         {() => (
@@ -41,7 +41,7 @@ export default function AgeVerificationModal() {
             </ModalHeader>
             <ModalBody>
               <Image
-                src={"/Molino.png"}
+                src={"/log-danslevent.png"}
                 width={600}
                 height={600}
                 alt="Imagen banner"
@@ -59,10 +59,10 @@ export default function AgeVerificationModal() {
                 onPress={handleClose}
                 className="footer-font rounded-xl"
               >
-                Sí, soy mayor de 18
+                Sí
               </Button>
               <Button color="primary" className="footer-font rounded-xl ">
-                No, no soy mayor de 18
+                No
               </Button>
             </ModalFooter>
           </>
