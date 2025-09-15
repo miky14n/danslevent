@@ -3,7 +3,7 @@ import ProductGrid from "@/components/ProductGrid";
 export default function productos(params) {
   const products = [
     {
-      image: "/edit 6.png",
+      image: "/images/botella.jpg",
       name: "VSOP",
       link: "/productos/vsop",
     },

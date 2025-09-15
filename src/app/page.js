@@ -7,9 +7,9 @@ import Image from "next/image";
 
 export default function Home() {
   const imagesCarousel = [
-    "/sidecar.png",
-    "/Brandy-Alexander.png",
-    "/French-Conection.png",
+    "/images/sidecar.png",
+    "/images/Brandy-Alexander.png",
+    "/images/French-Conection.png",
   ];
   return (
     <div className="text-tertiary">
@@ -17,7 +17,13 @@ export default function Home() {
 
       {/* Video */}
       <div className="mt-7">
-        <VideoEmbed src="intro.mp4" autoPlay muted loop controls={false} />
+        <VideoEmbed
+          src="/videos/intro.mp4"
+          autoPlay
+          muted
+          loop
+          controls={false}
+        />
       </div>
 
       {/* Intro */}
@@ -33,12 +39,12 @@ export default function Home() {
       </div>
 
       {/* Sección destilería */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 md:p-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-1 p-1 md:p-1">
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-2xl md:text-3xl font-bold mb-4">
             LO MEJOR DE LA DESTILERÍA FRANCESA
           </h1>
-          <p className="text-base md:text-xl leading-relaxed items-center">
+          <p className="text-base md:text-xl leading-relaxed text-center items-center">
             En Dans Le Vent, el arte de la destilación francesa se combina con
             un profundo respeto por el tiempo y la tradición. Cada gota refleja
             el savoir-faire transmitido por generaciones, donde la precisión, la
@@ -46,12 +52,11 @@ export default function Home() {
             inigualable.
           </p>
         </div>
-        <div className="flex justify-center">
+        <div className="relative w-full h-[400px] md:h-auto md:min-h-[500px] rounded-xl overflow-hidden shadow-lg">
           <Image
-            src="/viniedo1.png"
+            src="/images/viniedo1.png"
             alt="viñedo"
-            width={600}
-            height={600}
+            fill
             className="object-cover rounded-xl "
             quality={100}
           />
@@ -59,20 +64,21 @@ export default function Home() {
       </div>
 
       {/* Producto */}
-      <div className="px-4">
+      <div className="px-0">
         <ProductoCard
           titulo="VSOP Brandy"
           descripcion="Destilado 100% de uvas francesas y añejado de al menos 4 años en barricas de roble de Tronçais. Suave, elegante y con notas de vainilla y roble tostado."
           textoVertical="Nuestro Producto"
-          botellaSrc="/combine.png"
+          botellaSrc="/images/combine.png"
+          navigation="/productos/vsop"
         />
       </div>
 
       {/* Cocteles */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 md:p-12">
-        <div className="flex flex-col justify-center text-center md:text-left">
-          <h1 className="text-2xl md:text-3xl font-bold mb-4">CÓCTELES</h1>
-          <p className="text-base md:text-xl leading-relaxed max-w-md mx-auto md:mx-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-1 md:p-1">
+        <div className="flex flex-col justify-center items-center text-center md:text-left">
+          <h1 className="text-2xl  md:text-3xl font-bold mb-4">CÓCTELES</h1>
+          <p className="text-center md:text-xl leading-relaxed max-w-md mx-auto md:mx-0">
             El arte de crear recetas junto a Dans Le Vent, dejando volar la
             imaginación.
           </p>
@@ -88,10 +94,10 @@ export default function Home() {
       </div>
 
       {/* Legado */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 md:p-12 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-1 md:p-1 items-center">
         <div className="flex justify-center">
           <Image
-            src={"/Aroundpicture.png"}
+            src={"/Aroundpicture.webp"}
             width={400}
             height={400}
             alt="legado"

@@ -1,11 +1,13 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProductoCardAnimation({
   titulo,
   descripcion,
   textoVertical,
   botellaSrc,
+  navigation = "/",
 }) {
   return (
     <div className="w-full h-auto min-h-[400px] md:h-[480px] bg-gradient-to-b from-[#C8782E] to-[#E9BE96] flex items-center justify-center">
@@ -13,13 +15,15 @@ export default function ProductoCardAnimation({
         {/* Contenedor circulo + botella */}
         <div className="flex-shrink-0 w-full md:w-[50%] flex items-center justify-center md:justify-end transform transition-transform duration-700 group-hover:md:-translate-x-[50%]">
           <div className="flex-shrink-0 w-[70%] sm:w-[60%] md:w-[50%] flex items-center justify-center">
-            <Image
-              src={botellaSrc}
-              alt="Botella Producto"
-              width={500}
-              height={500}
-              className="relative z-10 max-h-[95%] max-w-[95%] object-contain"
-            />
+            <Link href={navigation}>
+              <Image
+                src={botellaSrc}
+                alt="Botella Producto"
+                width={500}
+                height={500}
+                className="relative z-10 max-h-[95%] max-w-[95%] object-contain"
+              />
+            </Link>
           </div>
         </div>
 

@@ -9,10 +9,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-secondary footer-font fixed top-0 left-0 w-full z-50 text-[17px]">
+    <nav className="bg-secondary footer-font fixed top-0 left-0 w-full z-50 text-[19px]">
       <div className="max-w-screen-xl mx-auto px-6">
         {/* Barra superior */}
-        <div className="flex items-center justify-between h-20 relative">
+        <div className="flex items-center justify-between h-25 relative">
           {/* Menú izquierdo (solo desktop) */}
           <div className="hidden md:flex space-x-12 text-white font-medium">
             <Link
@@ -31,10 +31,10 @@ export default function Navbar() {
           <div className="absolute left-1/2 transform -translate-x-1/2">
             <Link href="/" className="flex items-center">
               <Image
-                src="/logo.png"
+                src="/images/log-danslevent.png"
                 alt="img-logo"
-                width={100}
-                height={100}
+                width={90}
+                height={90}
                 className="object-contain"
               />
             </Link>
