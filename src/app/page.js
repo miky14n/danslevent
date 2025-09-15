@@ -97,7 +97,7 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-1 md:p-1 items-center">
         <div className="flex justify-center">
           <Image
-            src={"/Aroundpicture.webp"}
+            src={"/Aroundpicture.png"}
             width={400}
             height={400}
             alt="legado"
