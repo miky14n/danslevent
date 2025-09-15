@@ -27,9 +27,10 @@ export default function ProductGrid({ products }) {
             <Image
               src={product.image}
               alt={product.name}
-              width={300}
-              height={400}
+              width={400}
+              height={500}
               className="object-contain"
+              quality={100}
             />
           </div>
           <p className="mt-4 text-2xl font-semibold text-yellow-200">

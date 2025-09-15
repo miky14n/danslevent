@@ -3,7 +3,7 @@ import InfoSection from "@/components/InfoSection";
 
 export default function AboutUs() {
   return (
-    <div className="flex flex-col gap-y-16 mt-20">
+    <div className="flex flex-col gap-y-0 mt-20">
       {/* Contenedor con imagen de fondo */}
       <div className="relative w-full min-h-[400px] md:min-h-[500px]">
         <Image
@@ -33,7 +33,7 @@ export default function AboutUs() {
 
       {/* Otros contenedores */}
       <InfoSection
-        src={"/MolinoEspa.png"}
+        src={"/images/molino-final.jpg"}
         title={"De La Rocha LLC"}
         text={
           "Nuestro brandy está inspirado en la pasión y tradición de más de 6 generaciones de destiladores de brandy, DANS LE VENT es la culminación de más de 150 años de perfeccionamiento de este noble licor."
@@ -41,7 +41,7 @@ export default function AboutUs() {
       />
 
       <InfoSection
-        src={"/destiladoras.png"}
+        src={"/images/destiladoras.webp"}
         title={"Los pasos de nuestra destilacion"}
         text={
           "Buscando mantener sus raíces de 4 generaciones de molineros, desea introducir al mercado Boliviano está nueva marca, con una imagen clásica, donde se vea la tradición y las raíces, la pasión por el trabajo y los detalles, destacando que una bebida es compartir momentos, celebrar éxitos."
@@ -49,18 +49,33 @@ export default function AboutUs() {
         reverse={true}
       />
 
-      <InfoSection
-        src={"/edit 6.png"}
-        title={"Preguntas frecuentes"}
-        text={
-          "¿Que hace especial el brandy VSOP? El Brandy VSOP Dans Le Vent es especial por su elaboración 100% con uvas de Coñac y su añejamiento en roble Troncáis, que le otorgan suavidad, elegancia y un sabor distintivo."
-        }
-        personalWidth={315}
-        customHeight={415}
-      />
+      <div id="faq" className="flex flex-col md:flex-row">
+        {/* Video */}
+        <div className="relative w-full md:w-1/2 rounded-xl overflow-hidden shadow-lg h-[300px] md:h-[460px]">
+          <iframe
+            src="https://www.youtube.com/embed/zDgeu3ahf2w?autoplay=1&mute=1&loop=1&playlist=zDgeu3ahf2w&vq=hd1080"
+            className="w-full h-full object-contain"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+          ></iframe>
+        </div>
+
+        {/* Texto */}
+        <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-2 md:px-4">
+          <h1 className="text-3xl md:text-4xl font-semibold text-tertiary mb-4">
+            Preguntas frecuentes
+          </h1>
+          <p className="text-lg md:text-xl text-quaternary leading-relaxed">
+            ¿Qué hace especial el brandy VSOP? El Brandy VSOP Dans Le Vent es
+            especial por su elaboración 100% con uvas de Coñac y su añejamiento
+            en roble Troncáis, que le otorgan suavidad, elegancia y un sabor
+            distintivo.
+          </p>
+        </div>
+      </div>
 
       <InfoSection
-        src={"/atardecer.png"}
+        src={"/images/atardecer.png"}
         title={"Diferenciación"}
         text={
           "De La Rocha LLC se destaca en el mercado por traer el primer brandy a Bolivia, un producto que es esencialmente un coñac de alta calidad, incluso producido en la ciudad del coñac, siendo un brandy francés 100%. Además, estamos trabajando en proyectos emocionantes."

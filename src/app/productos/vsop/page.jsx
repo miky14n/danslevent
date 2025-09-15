@@ -1,31 +1,30 @@
 "use client";
 import Image from "next/image";
 import ProductGrid from "@/components/ProductGrid";
+import InfoCard from "@/components/InfoCard";
 
 export default function VsopProductView() {
   const cocktails = [
     {
-      image: "/sidecar.png",
+      image: "/images/sidecar.png",
       name: "Sidecar",
       link: "",
     },
     {
-      image: "/Brandy-Alexander.png",
+      image: "/images/Brandy-Alexander.png",
       name: "Brandy Alexander",
       link: "",
     },
     {
-      image: "/French-Conection.png",
+      image: "/images/French-Conection.png",
       name: "French Connection",
       link: "",
     },
   ];
 
   return (
-    <main className="max-w-screen-2xl mx-auto px-4 md:px-8 py-16 space-y-20 mt-10">
-      {/* HERO */}
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-        {/* Texto descriptivo */}
+    <section className="max-w-screen-2xl mx-auto px-4 md:px-8 py-16 space-y-20 mt-10">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-1 items-start">
         <div className="space-y-4">
           <h1 className="text-4xl font-extrabold text-tertiary">BRANDY VSOP</h1>
           <p className="text-quaternary leading-relaxed text-lg">
@@ -46,63 +45,35 @@ export default function VsopProductView() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* Ingredientes */}
-              <div className="rounded-2xl bg-white/5 p-5 shadow">
-                <h3 className="text-lg font-semibold text-tertiary mb-3">
-                  Ingredientes
-                </h3>
-                <ul className="list-disc list-inside text-quaternary space-y-1 text-sm">
-                  <li>2 oz de Brandy DANS LE VENT</li>
-                  <li>1 oz de Jugo de cranberry</li>
-                  <li>0.5 oz de Jugo de limón</li>
-                  <li>1 oz de Triple sec</li>
-                  <li>Azúcar para escarchar el borde </li>
-                </ul>
-                <div className="mt-10 space-y-4">
-                  <Image
-                    src="/DSC_0087.jpg"
-                    alt="Brandy Crusta"
-                    width={240}
-                    height={444}
-                    quality={100}
-                    className="rounded-2xl shadow-lg w-full h-auto"
-                  />
-                </div>
-              </div>
+              <InfoCard
+                title="Ingredientes"
+                items={[
+                  "2 oz de Brandy DANS LE VENT",
+                  "1 oz de Jugo de cranberry",
+                  "0.5 oz de Jugo de limón",
+                  "1 oz de Triple sec",
+                  "Azúcar para escarchar el borde",
+                ]}
+                mediaType="image"
+                mediaSrc="/DSC_0087.jpg"
+                mediaAlt="Brandy Crusta"
+              />
 
               {/* Preparación */}
-              <div className="rounded-2xl bg-white/5 p-5 shadow">
-                <h3 className="text-lg font-semibold text-tertiary mb-3">
-                  Preparación
-                </h3>
-                <ul className="list-disc list-inside text-quaternary space-y-1 text-sm">
-                  <li>
-                    Escarchar el borde de la copa con limón y azúcar (opcional).
-                  </li>
-                  <li>Llenar una coctelera con hielo.</li>
-                  <li>
-                    Agregar 45 ml de brandy, 15 ml de licor de naranja y 15 ml
-                    de jugo de limón fresco.
-                  </li>
-                  <li>
-                    Agregar un chorrito de curaçao o jarabe simple (opcional).
-                  </li>
-                  <li>Agitar bien durante 15 segundos.</li>
-                  <li>Colar la mezcla en la copa fría.</li>
-                  <li>Decorar con una cáscara de limón dentro de la copa.</li>
-                </ul>
-
-                <div className="mt-4 space-y-4">
-                  <video
-                    className="rounded-2xl shadow-lg w-full h-auto"
-                    controls
-                    src="/Video 1.mp4"
-                    autoPlay
-                    muted
-                  >
-                    Tu navegador no soporta el video.
-                  </video>
-                </div>
-              </div>
+              <InfoCard
+                title="Preparación"
+                items={[
+                  "Escarchar el borde de la copa con limón y azúcar (opcional).",
+                  "Llenar una coctelera con hielo.",
+                  "Agregar 45 ml de brandy, 15 ml de licor de naranja y 15 ml de jugo de limón fresco.",
+                  "Agregar un chorrito de curaçao o jarabe simple (opcional).",
+                  "Agitar bien durante 15 segundos.",
+                  "Colar la mezcla en la copa fría.",
+                  "Decorar con una cáscara de limón dentro de la copa.",
+                ]}
+                mediaType="video"
+                mediaSrc="/videos/vide-crusta.mp4"
+              />
             </div>
           </div>
         </div>
@@ -110,7 +81,7 @@ export default function VsopProductView() {
         {/* Imagen de la botella */}
         <div className="flex justify-center items-center">
           <Image
-            src="/edit 6.png"
+            src="/images/botella.jpg"
             alt="Brandy VSOP"
             width={620}
             height={620}
@@ -127,6 +98,6 @@ export default function VsopProductView() {
         </h2>
         <ProductGrid products={cocktails} />
       </section>
-    </main>
+    </section>
   );
 }

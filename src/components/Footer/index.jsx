@@ -19,7 +19,13 @@ export default function Footer() {
             >
               <InstagramIc />
             </Link>
-            <Tiktok />
+            <Link
+              href={"https://www.tiktok.com/@dansleventfrance"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Tiktok />
+            </Link>
             <Link
               href="https://www.facebook.com/profile.php?id=61579741095801"
               target="_blank"
@@ -42,9 +48,9 @@ export default function Footer() {
           <h3 className="font-semibold mb-4">Atención al cliente</h3>
           <ul className="space-y-2">
             <li>
-              <a href="#" className="hover:underline">
+              <Link href="/acerca-de-nosotros#faq" className="hover:underline">
                 Preguntas Frecuentes
-              </a>
+              </Link>
             </li>
             <Link
               href="https://wa.me/77429267"
@@ -61,9 +67,14 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link
+                href="https://maps.app.goo.gl/rDtkCDLAWFYy7sGW7"
+                className="hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Ubicación
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
