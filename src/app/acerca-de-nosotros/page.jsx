@@ -53,7 +53,7 @@ export default function AboutUs() {
         {/* Video */}
         <div className="relative w-full md:w-1/2 rounded-xl overflow-hidden shadow-lg h-[300px] md:h-[460px]">
           <iframe
-            src="https://www.youtube.com/embed/zDgeu3ahf2w?autoplay=1&mute=1&loop=1&playlist=zDgeu3ahf2w&vq=hd1080"
+            src="https://drive.google.com/file/d/1SD4We21F_mjYHrooLJ6pnosAwCGm3bI_/preview "
             className="w-full h-full object-contain"
             allow="autoplay; encrypted-media"
             allowFullScreen

@@ -5,9 +5,10 @@
   /* Paleta ordenada */
   --color-primary: #263173;
   --color-secondary: #08041b;
-  --color-tertiary: #E2D287;
-  --color-quaternary: #D5D5D5;
-  --color-quinary: #C8782E;
+  --color-tertiary: #e2d287;
+  --color-quaternary: #d5d5d5;
+  --color-quinary: #c8782e;
+  --color-sixty: #0c2340;
 
   /* Defaults */
   --background: var(--color-primary);
@@ -24,6 +25,7 @@
   --color-tertiary: var(--color-tertiary);
   --color-quaternary: var(--color-quaternary);
   --color-quinary: var(--color-quinary);
+  --color-sixty: var(--color-sixty);
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);

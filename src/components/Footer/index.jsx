@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FacebookIc, InstagramIc, Tiktok } from "../Icons";
+import NewsletterForm from "../NewsletterForm";
 
 // components/Footer.jsx
 export default function Footer() {
@@ -62,9 +63,9 @@ export default function Footer() {
               </p>
             </Link>
             <li>
-              <a href="#" className="hover:underline">
-                Agendar cita
-              </a>
+              <Link href="/agendar-cita" className="hover:underline">
+                <p>Agendar cita</p>
+              </Link>
             </li>
             <li>
               <Link
@@ -83,16 +84,7 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold mb-4">Dansle Vent</h3>
           <p>Recibir ofertas</p>
-          <div className="mt-2 flex">
-            <input
-              type="email"
-              placeholder="Ingrese tu correo"
-              className="p-2 rounded-l bg-white text-black flex-1 outline-none"
-            />
-            <button className="bg-primary text-white px-4 rounded-r hover:opacity-80">
-              Unirse
-            </button>
-          </div>
+          <NewsletterForm />
         </div>
       </div>
     </footer>

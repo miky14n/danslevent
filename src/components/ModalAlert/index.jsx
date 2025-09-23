@@ -37,7 +37,7 @@ export default function AgeVerificationModal() {
         {() => (
           <>
             <ModalHeader className="bg-secondary">
-              Eres mayor de edad?
+              ¿Eres mayor de edad?
             </ModalHeader>
             <ModalBody>
               <Image
@@ -46,12 +46,12 @@ export default function AgeVerificationModal() {
                 height={600}
                 alt="Imagen banner"
               />
-              {/*<p>
-                Para continuar, debe confirmar que es mayor de 18 años.
-                <br />
-                El consumo de bebidas alcohólicas está prohibido a menores de
-                edad.
-              </p>*/}
+              {
+                <p>
+                  El consumo de bebidas alcohólicas está prohibido a menores de
+                  edad.
+                </p>
+              }
             </ModalBody>
             <ModalFooter>
               <Button

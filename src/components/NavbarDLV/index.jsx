@@ -21,10 +21,9 @@ export default function Navbar() {
             >
               Nuestros Productos
             </Link>
-            {/*}
             <Link href="/cocteles" className="hover:text-yellow-400 transition">
               Nuestros Cócteles
-            </Link>*/}
+            </Link>
           </div>
 
           {/* Logo centrado SIEMPRE */}
