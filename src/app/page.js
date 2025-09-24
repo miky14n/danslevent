@@ -16,11 +16,6 @@ export default function Home() {
 
       navigation: "/cocteles/crusta",
     },
-    {
-      src: "/images/French-Conection.png",
-
-      navigation: "*",
-    },
   ];
   return (
     <div className="text-tertiary">
