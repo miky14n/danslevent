@@ -36,9 +36,7 @@ export default function AgeVerificationModal() {
       <ModalContent>
         {() => (
           <>
-            <ModalHeader className="bg-secondary">
-              ¿Eres mayor de edad?
-            </ModalHeader>
+            <ModalHeader className="bg-secondary"></ModalHeader>
             <ModalBody>
               <Image
                 src={"/images/log-danslevent.png"}
@@ -46,22 +44,20 @@ export default function AgeVerificationModal() {
                 height={600}
                 alt="Imagen banner"
               />
-              {
-                <p>
-                  El consumo de bebidas alcohólicas está prohibido a menores de
-                  edad.
-                </p>
-              }
+              {<p className="text-2xl">¿Eres mayor de edad?</p>}
             </ModalBody>
             <ModalFooter>
               <Button
                 color="primary"
                 onPress={handleClose}
-                className="footer-font rounded-xl"
+                className="footer-font rounded-xl text-2xl"
               >
                 Sí
               </Button>
-              <Button color="primary" className="footer-font rounded-xl ">
+              <Button
+                color="primary"
+                className="footer-font rounded-xl text-2xl"
+              >
                 No
               </Button>
             </ModalFooter>
