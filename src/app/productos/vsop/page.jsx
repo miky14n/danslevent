@@ -9,12 +9,12 @@ export default function VsopProductView() {
     {
       image: "/images/sidecar.png",
       name: "Sidecar",
-      link: "",
+      link: "/cocteles/sidecar",
     },
     {
-      image: "/images/Brandy-Alexander.png",
-      name: "Brandy Alexander",
-      link: "",
+      image: "/images/crusta.jpg",
+      name: "Crusta",
+      link: "/cocteles/crusta",
     },
     {
       image: "/images/French-Conection.png",
@@ -93,6 +93,7 @@ export default function VsopProductView() {
           <Link
             href="https://es.wikipedia.org/wiki/Brandy"
             className="bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg transition"
+            target="blank"
           >
             Aprender más del Brandy
           </Link>
