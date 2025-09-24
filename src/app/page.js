@@ -7,9 +7,20 @@ import Image from "next/image";
 
 export default function Home() {
   const imagesCarousel = [
-    "/images/sidecar.png",
-    "/images/Brandy-Alexander.png",
-    "/images/French-Conection.png",
+    {
+      src: "/images/sidecar.png",
+      navigation: "/cocteles/sidecar",
+    },
+    {
+      src: "/images/crusta.jpg",
+
+      navigation: "/cocteles/crusta",
+    },
+    {
+      src: "/images/French-Conection.png",
+
+      navigation: "*",
+    },
   ];
   return (
     <div className="text-tertiary">
@@ -89,6 +100,7 @@ export default function Home() {
             height="h-[400px] md:h-[550px]"
             widthImg={300}
             heightImg={300}
+            autoSlide={true}
           />
         </div>
       </div>

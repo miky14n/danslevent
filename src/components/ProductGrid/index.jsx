@@ -23,16 +23,16 @@ export default function ProductGrid({ products }) {
           href={product.link}
           className="flex flex-col items-center text-center group"
         >
-          <div className="overflow-hidden rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-105">
+          <div className="relative w-[400px] h-[500px] overflow-hidden rounded-2xl shadow-lg transition-transform duration-300 group-hover:scale-105">
             <Image
               src={product.image}
               alt={product.name}
-              width={400}
-              height={500}
+              fill
               className="object-contain"
               quality={100}
             />
           </div>
+
           <p className="mt-4 text-2xl font-semibold text-yellow-200">
             {product.name}
           </p>

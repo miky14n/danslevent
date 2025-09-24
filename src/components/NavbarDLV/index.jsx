@@ -47,13 +47,13 @@ export default function Navbar() {
             >
               Acerca de Nosotros
             </Link>
-            {/*}
+            {/*}*/}
             <Link
-              href="/estilo-vida"
+              href="/estilo-de-vida"
               className="hover:text-yellow-400 transition"
             >
               Estilo de Vida
-            </Link>*/}
+            </Link>
           </div>
 
           {/* Botón hamburguesa (solo mobile, alineado derecha) */}
@@ -91,14 +91,14 @@ export default function Navbar() {
             >
               Acerca de Nosotros
             </Link>
-            {/*}
+            {/*}*/}
             <Link
-              href="/estilo-vida"
+              href="/estilo-de-vida"
               onClick={() => setIsOpen(false)}
               className="hover:text-yellow-400"
             >
               Estilo de Vida
-            </Link>*/}
+            </Link>
           </div>
         )}
       </div>

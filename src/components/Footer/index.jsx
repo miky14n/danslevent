@@ -87,6 +87,11 @@ export default function Footer() {
           <NewsletterForm />
         </div>
       </div>
+      <p className="text-center mt-8">
+        🍸 Este sitio contiene información sobre bebidas alcohólicas. Prohibida
+        la venta a menores de edad. El consumo excesivo es perjudicial para la
+        salud. ¡Disfruta responsablemente!
+      </p>
     </footer>
   );
 }

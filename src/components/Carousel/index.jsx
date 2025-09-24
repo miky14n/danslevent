@@ -74,22 +74,22 @@ const Carousel = ({
         onTouchStart={handleDragStart}
         onTouchEnd={handleDragEnd}
       >
-        {images.map((src, index, navigation) => (
+        {images.map((image, index) => (
           <div
             key={index}
             className={`absolute inset-0 flex items-center justify-center transition-opacity duration-700 ease-in-out ${
               index === current ? "opacity-100" : "opacity-0"
             }`}
           >
-            <Link href={navigation}>
+            {console.log(image.navigation)}
+            <Link href={image.navigation} className="block relative z-10">
               <Image
-                src={src}
+                src={image.src}
                 alt={`Slide ${index + 1}`}
                 width={widthImg}
                 height={heightImg}
-                // evita que la imagen intercepte el drag y que se "arrastre" como ghost
                 draggable={false}
-                className="object-contain max-h-full max-w-full rounded-xl relative z-10 pointer-events-none"
+                className="object-contain max-h-full max-w-full rounded-xl pointer-events-none"
                 priority={index === 0}
               />
             </Link>

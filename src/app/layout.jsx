@@ -1,7 +1,14 @@
-import './globals.css';
-import { Providers } from './providers/provider';
-import NavbarDLV from '@/components/NavbarDLV';
-import Footer from '@/components/Footer';
+import "./globals.css";
+import { Providers } from "./providers/provider";
+import NavbarDLV from "@/components/NavbarDLV";
+import Footer from "@/components/Footer";
+
+export const metadata = {
+  title: "Dans Le Vent",
+  description:
+    "Dans Le Vent, brandy elegante y versátil. Encuentra información de la marca, nuestro producto y recetas de cocteles para disfrutar en cada ocasión.",
+  keywords: ["Brandy, Francia"],
+};
 
 export default function RootLayout({ children }) {
   return (
