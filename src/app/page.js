@@ -38,20 +38,19 @@ export default function Home() {
       </div>
 
       {/* Intro */}
-      <div className="px-4 md:px-10 lg:px-20 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4">
-          ¿Por qué celebrar junto a Dans Le Vent?
-        </h1>
-        <p className="text-lg md:text-2xl max-w-3xl mx-auto">
-          Un brindis con Dans Le Vent es un tributo al arte y la elegancia
-          francesa. Suave, refinado y lleno de carácter, es la elección perfecta
-          para momentos que merecen ser inolvidables.
-        </p>
-      </div>
 
       {/* Sección destilería */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-1 p-1 md:p-1">
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center text-center">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">
+            ¿Por qué celebrar junto a Dans Le Vent?
+          </h1>
+          <p className="text-lg md:text-2xl max-w-3xl mx-auto">
+            Un brindis con Dans Le Vent es un tributo al arte y la elegancia
+            francesa. Suave, refinado y lleno de carácter, es la elección
+            perfecta para momentos que merecen ser inolvidables.
+          </p>
+
           <h1 className="text-2xl md:text-3xl font-bold mb-4">
             LO MEJOR DE LA DESTILERÍA FRANCESA
           </h1>

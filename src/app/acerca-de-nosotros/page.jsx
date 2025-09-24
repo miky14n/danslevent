@@ -3,7 +3,7 @@ import InfoSection from "@/components/InfoSection";
 
 export default function AboutUs() {
   return (
-    <div className="flex flex-col gap-y-0 mt-20">
+    <div className="flex flex-col gap-y-0 mt-0">
       {/* Contenedor con imagen de fondo */}
       <div className="relative w-full min-h-[400px] md:min-h-[500px]">
         <Image

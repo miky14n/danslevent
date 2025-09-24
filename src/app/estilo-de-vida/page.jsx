@@ -9,6 +9,7 @@ export default function EstiloDeVida() {
       title: "El Arte de Degustar Brandy",
       description:
         "Descubre los matices de saborear un brandy premium, desde el remolino en la copa hasta la cata y degustación.",
+      navigation: "https://es.wikipedia.org/wiki/Brandy",
     },
     {
       image: "/images/comida.jpg",
@@ -29,24 +30,36 @@ export default function EstiloDeVida() {
         "Emprende viajes que encarnan el lujo y la sofisticación del estilo de vida Dans Le Vent.",
     },
   ];
-
+  const renderImage = (item) => (
+    <Image
+      src={item.image}
+      alt={item.title}
+      width={400}
+      height={400}
+      className="rounded-t-lg object-cover w-full h-100"
+    />
+  );
   return (
     <section className="max-w-7xl mx-auto px-2 py-12">
-      <h2 className="text-5xl font-bold mb-8 text-tertiary ">Estilo de vida</h2>
+      <h2 className="text-4xl font-bold mb-8 text-tertiary ">Estilo de vida</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {lifestyleItems.map((item, index) => (
           <div
-            key={index}
             className="bg-sixty rounded-lg shadow hover:shadow-2xl transition"
+            key={index}
           >
-            <Image
-              src={item.image}
-              alt={item.title}
-              width={400}
-              height={400}
-              className="rounded-t-lg object-cover w-full h-100"
-            />
+            {item.navigation ? (
+              <Link
+                href={item.navigation}
+                target="blank"
+                rel="noopener noreferrer"
+              >
+                {renderImage(item)}
+              </Link>
+            ) : (
+              renderImage(item)
+            )}
             <div className="p-4">
               <h3 className="font-semibold text-2xl mb-2 text-tertiary">
                 {item.title}

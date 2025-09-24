@@ -31,12 +31,12 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center  px-4 py-12">
+    <section className="min-h-screen flex flex-col items-center justify-normal mt-20  px-4 py-12">
       <div className="text-center max-w-2xl mb-8">
         <h1 className="text-4xl md:text-4xl font-bold text-quinary">
           Gracias por contactarse con la familia Dans Le Vent
         </h1>
-        <p className="mt-3 text-gray-300 text-[20px]">
+        <p className="mt-3 text-quaternary text-[20px]">
           Será agendado en la brevedad posible. Por favor, ingrese todos los
           datos del formulario y un encargado se pondrá en contacto con usted.
         </p>

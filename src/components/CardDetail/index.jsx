@@ -19,12 +19,12 @@ export default function CocktailCard({ image, title, description, link }) {
 
         {/* Contenido */}
         <div className="flex flex-col justify-between w-full md:w-2/3 space-y-4">
-          <h2 className="text-2xl font-semibold text-yellow-200">{title}</h2>
-          <p className="text-gray-200">{description}</p>
+          <h2 className="text-3xl font-semibold text-yellow-200 ">{title}</h2>
+          <p className="text-gray-200 text-2xl">{description}</p>
           <div className="flex justify-end">
             <Link
               href={link}
-              className="bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg transition"
+              className="bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg transition text-lg"
             >
               Saber más
             </Link>
