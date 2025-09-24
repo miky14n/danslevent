@@ -9,7 +9,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-secondary footer-font fixed top-0 left-0 w-full z-50 text-[19px]">
+    <nav className="bg-secondary footer-font sticky top-0 w-full z-50 text-[19px]">
       <div className="max-w-screen-xl mx-auto px-6">
         {/* Barra superior */}
         <div className="flex items-center justify-between h-25 relative">
@@ -75,14 +75,15 @@ export default function Navbar() {
             >
               Nuestros Productos
             </Link>
-            {/*}
-            <Link
-              href="/cocteles"
-              onClick={() => setIsOpen(false)}
-              className="hover:text-yellow-400"
-            >
-              Nuestros Cócteles
-            </Link>*/}
+            {
+              <Link
+                href="/cocteles"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-yellow-400"
+              >
+                Nuestros Cócteles
+              </Link>
+            }
             <Link
               href="/acerca-de-nosotros"
               onClick={() => setIsOpen(false)}

@@ -10,7 +10,7 @@ export default function Cocteleria(params) {
       link: "/cocteles/sidecar",
     },
     {
-      image: "/images/DSC_0087.jpg",
+      image: "/images/crusta.jpg",
       title: "Crusta",
       description:
         "Clásico cóctel de brandy con licor de naranja y limón fresco, de sabor cítrico y elegante.",
@@ -18,7 +18,7 @@ export default function Cocteleria(params) {
     },
   ];
   return (
-    <section className="mt-25">
+    <section className="">
       <div>
         {listOfCocktails.map((cocktailDetails, index) => (
           <CardDetail key={index} {...cocktailDetails} />

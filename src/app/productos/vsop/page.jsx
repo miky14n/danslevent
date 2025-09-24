@@ -2,6 +2,7 @@
 import Image from "next/image";
 import ProductGrid from "@/components/ProductGrid";
 import InfoCard from "@/components/InfoCard";
+import Link from "next/link";
 
 export default function VsopProductView() {
   const cocktails = [
@@ -23,7 +24,7 @@ export default function VsopProductView() {
   ];
 
   return (
-    <section className="max-w-screen-2xl mx-auto px-4 md:px-8 py-16 space-y-20 mt-10">
+    <section className="max-w-screen-2xl mx-auto px-4 md:px-8 py-16 space-y-20 ">
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-1 items-start">
         <div className="space-y-4">
           <h1 className="text-4xl font-extrabold text-tertiary">BRANDY VSOP</h1>
@@ -55,7 +56,7 @@ export default function VsopProductView() {
                   "Azúcar para escarchar el borde",
                 ]}
                 mediaType="image"
-                mediaSrc="/DSC_0087.jpg"
+                mediaSrc="/images/crusta.jpg"
                 mediaAlt="Brandy Crusta"
               />
 
@@ -79,7 +80,7 @@ export default function VsopProductView() {
         </div>
 
         {/* Imagen de la botella */}
-        <div className="flex justify-center items-center">
+        <div className="flex flex-col justify-center items-center space-y-4">
           <Image
             src="/images/botella.jpg"
             alt="Brandy VSOP"
@@ -88,6 +89,13 @@ export default function VsopProductView() {
             className="rounded-2xl shadow-2xl object-contain max-w-full h-auto"
             priority
           />
+
+          <Link
+            href="https://es.wikipedia.org/wiki/Brandy"
+            className="bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded-lg transition"
+          >
+            Aprender más del Brandy
+          </Link>
         </div>
       </section>
 

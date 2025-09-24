@@ -16,7 +16,7 @@ export default function Home() {
       <ModalAlert />
 
       {/* Video */}
-      <div className="mt-7">
+      <div className="">
         <VideoEmbed
           src="/videos/intro.mp4"
           autoPlay

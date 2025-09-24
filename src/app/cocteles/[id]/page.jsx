@@ -2,7 +2,7 @@ import InfoCard from "@/components/InfoCard";
 import { cocktailsData } from "./data/dataCocktails";
 import Image from "next/image";
 import ProductGrid from "@/components/ProductGrid";
-
+import ListoCocktails from "../page";
 export default function CocktailDetail({ params }) {
   const cocktail = cocktailsData.find((c) => c.id === params.id);
 
@@ -25,7 +25,7 @@ export default function CocktailDetail({ params }) {
   ];
 
   return (
-    <section className="max-w-screen-2xl mx-auto px-4 md:px-8 py-16 space-y-20 mt-15">
+    <section className="max-w-screen-2xl mx-auto px-4 md:px-8 py-16 space-y-20 ">
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-1 items-start">
         {/* Imagen de la botella */}
         <div className="flex justify-center items-center">
@@ -63,11 +63,13 @@ export default function CocktailDetail({ params }) {
       </section>
 
       {/* OTRAS OPCIONES */}
-      <section className="space-y-8">
+      <section className="">
         <h2 className="text-center text-2xl font-semibold text-tertiary">
           Otras opciones de Cócteles
         </h2>
-        <ProductGrid products={cocktails} />
+        {/*} <ProductGrid products={cocktails} />*/}
+
+        <ListoCocktails />
       </section>
     </section>
   );
