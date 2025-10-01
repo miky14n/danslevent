@@ -16,7 +16,7 @@
 }
 
 @theme inline {
-  /* Enlazamos a Tailwind */
+  /* Colores y fuentes que ya tienes… */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
@@ -29,6 +29,11 @@
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* 🔑 Nuevos tamaños personalizados */
+  --text-title: 40px; /* 30pt */
+  --text-subtitle: 32px; /* 24pt */
+  --text-body: 24px; /* 18pt */
 }
 
 @media (prefers-color-scheme: dark) {
