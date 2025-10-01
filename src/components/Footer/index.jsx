@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FacebookIc, InstagramIc, Tiktok } from "../Icons";
 import NewsletterForm from "../NewsletterForm";
 import { useState, useEffect } from "react";
-
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 // components/Footer.jsx
 export default function Footer() {
   const [isAdult, setIsAdult] = useState();
@@ -27,21 +27,21 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <InstagramIc />
+                  <FaInstagram className="hover:text-pink-500 transition-colors text-4xl" />
                 </Link>
                 <Link
                   href={"https://www.tiktok.com/@dansleventfrance"}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Tiktok />
+                  <FaTiktok className="hover:text-quaternary dark:hover:text-white transition-colors text-4xl" />
                 </Link>
                 <Link
                   href="https://www.facebook.com/profile.php?id=61579741095801"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FacebookIc />
+                  <FaFacebook className="hover:text-blue-500 transition-colors text-4xl" />
                 </Link>
               </div>
             </div>
