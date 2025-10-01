@@ -28,7 +28,7 @@ export async function POST(request) {
           <p>Nombre: <strong>${data.name}</strong></p>
           <p>Número de celular: <strong>${data.number}</strong></p>
           <p>Correo electrónico: <strong>${data.email}</strong></p>
-          <h4>Motico por el que desea ser contactado es</h4>
+          <h4>Motivo por el que desea ser contactado es</h4>
           <p>${data.reason}</p>
         </body>
       </html>

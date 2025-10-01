@@ -5,14 +5,14 @@ import Link from "next/link";
 export default function EstiloDeVida() {
   const lifestyleItems = [
     {
-      image: "/images/botella-sostenida.jpg",
+      image: "/images/botella-sostenida.png",
       title: "El Arte de Degustar Brandy",
       description:
         "Descubre los matices de saborear un brandy premium, desde el remolino en la copa hasta la cata y degustación.",
       navigation: "https://es.wikipedia.org/wiki/Brandy",
     },
     {
-      image: "/images/comida.jpg",
+      image: "/images/comida.png",
       title: "Maridaje del Brandy con Comida Gourmet y Puros",
       description:
         "Explora los maridajes perfectos de Dans Le Vent con la alta cocina y los puros para una experiencia elevada.",
@@ -24,7 +24,7 @@ export default function EstiloDeVida() {
         "Aprende cómo crear reuniones memorables con Dans Le Vent como pieza central.",
     },
     {
-      image: "/images/viaje.webp",
+      image: "/images/viaje.png",
       title: "Viajes y Experiencias con Dans Le Vent",
       description:
         "Emprende viajes que encarnan el lujo y la sofisticación del estilo de vida Dans Le Vent.",
