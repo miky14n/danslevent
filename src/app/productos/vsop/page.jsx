@@ -82,7 +82,7 @@ export default function VsopProductView() {
         {/* Imagen de la botella */}
         <div className="flex flex-col justify-center items-center space-y-4">
           <Image
-            src="/images/botella.jpg"
+            src="/images/botella-2.png"
             alt="Brandy VSOP"
             width={620}
             height={620}

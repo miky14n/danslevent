@@ -3,6 +3,8 @@ import { Providers } from "./providers/provider";
 import NavbarDLV from "@/components/NavbarDLV";
 import Footer from "@/components/Footer";
 
+import ModalAlert from "@/components/ModalAlert";
+
 export const metadata = {
   title: "Dans Le Vent",
   description:
@@ -16,6 +18,7 @@ export default function RootLayout({ children }) {
       <body>
         <Providers>
           <div className="min-h-screen flex flex-col">
+            <ModalAlert />
             <NavbarDLV />
             <main className="flex-1">{children}</main>
             <Footer />
