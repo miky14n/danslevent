@@ -1,7 +1,5 @@
-import InfoCard from "@/components/InfoCard";
 import { cocktailsData } from "./data/dataCocktails";
 import Image from "next/image";
-import ProductGrid from "@/components/ProductGrid";
 import ListoCocktails from "../page";
 import { Suspense } from "react";
 export default function CocktailDetail({ params }) {

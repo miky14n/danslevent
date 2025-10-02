@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import EventsSection from "../eventos/page";
+import { Suspense } from "react";
 
 export default function EstiloDeVida() {
   const lifestyleItems = [
@@ -73,7 +75,7 @@ export default function EstiloDeVida() {
       </div>
 
       <div className="text-center mt-10 ">
-        <p className="mb-4 text-title">
+        <p className="mb-4 text-title text-tertiary">
           Comparte tus <strong>#DansLeVentMoments</strong> en redes sociales
         </p>
         <div className="flex justify-center gap-4">
@@ -92,6 +94,11 @@ export default function EstiloDeVida() {
             Tiktok
           </Link>
         </div>
+      </div>
+      <div>
+        <Suspense fallback={<div>Cargando Eventos.....</div>}>
+          <EventsSection />
+        </Suspense>
       </div>
     </section>
   );
