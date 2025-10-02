@@ -1,26 +1,19 @@
 "use client";
 import Link from "next/link";
-import { FacebookIc, InstagramIc, Tiktok } from "../Icons";
 import NewsletterForm from "../NewsletterForm";
-import { useState, useEffect } from "react";
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 // components/Footer.jsx
 export default function Footer() {
-  const [isAdult, setIsAdult] = useState();
-  useEffect(() => {
-    const storedValue = localStorage.getItem("isAdult");
-    setIsAdult(storedValue);
-  }, []);
+  const pathname = usePathname();
   return (
     <footer className="bg-secondary text-white p-8 footer-font">
-      {isAdult && (
+      {pathname !== "/unauthorized" && (
         <div>
           <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-8">
             {/* Seguinos */}
             <div>
-              <h3 className="font-semibold mb-4 items-center justify-center">
-                Síguenos
-              </h3>
+              <h3 className=" mb-4 items-center justify-center">Síguenos</h3>
               <div className="flex gap-3">
                 <Link
                   href="https://www.instagram.com/danslevent_ "
@@ -48,14 +41,14 @@ export default function Footer() {
 
             {/* Horarios */}
             <div>
-              <h3 className="font-semibold mb-4">Horarios</h3>
+              <h3 className=" mb-4">Horarios</h3>
               <p>Lun-Vie: 14pm - 20pm</p>
               <p>Sábado: 14pm - 20pm</p>
             </div>
 
             {/* Atención al cliente */}
             <div>
-              <h3 className="font-semibold mb-4">Atención al cliente</h3>
+              <h3 className=" mb-4">Atención al cliente</h3>
               <ul className="space-y-2">
                 <li>
                   <Link
@@ -94,7 +87,7 @@ export default function Footer() {
 
             {/* Newsletter */}
             <div>
-              <h3 className="font-semibold mb-4">Dans le Vent</h3>
+              <h3 className=" mb-4">Dans le Vent</h3>
               <p>Recibir ofertas</p>
               <NewsletterForm />
             </div>

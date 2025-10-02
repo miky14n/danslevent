@@ -40,7 +40,7 @@ export default function Alert({ message, color, link, setStatus = () => {} }) {
       <div className="ml-3 text-sm font-medium">
         {message}{" "}
         {link && (
-          <a href={link} className="font-semibold underline hover:no-underline">
+          <a href={link} className=" underline hover:no-underline">
             example link
           </a>
         )}

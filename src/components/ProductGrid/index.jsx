@@ -33,9 +33,7 @@ export default function ProductGrid({ products }) {
             />
           </div>
 
-          <p className="mt-4 text-2xl font-semibold text-yellow-200">
-            {product.name}
-          </p>
+          <p className="mt-4 text-2xl  text-yellow-200">{product.name}</p>
         </Link>
       ))}
     </div>

@@ -36,7 +36,7 @@ export default function InfoSection({
 
       {/* Texto */}
       <div className="w-full md:w-1/2 justify-center text-center md:text-left px-2 md:px-4">
-        <h1 className="text-3xl md:text-4xl font-semibold text-center text-tertiary mb-4">
+        <h1 className="text-3xl md:text-4xl  text-center text-tertiary mb-4">
           {title}
         </h1>
         <p className="text-lg md:text-xl text-quaternary text-center leading-relaxed">

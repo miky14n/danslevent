@@ -19,7 +19,7 @@ export default function CocktailCard({ image, title, description, link }) {
 
         {/* Contenido */}
         <div className="flex flex-col justify-between w-full md:w-2/3 space-y-4">
-          <h2 className="text-3xl font-semibold text-yellow-200 ">{title}</h2>
+          <h2 className="text-3xl  text-yellow-200 ">{title}</h2>
           <p className="text-gray-200 text-2xl">{description}</p>
           <div className="flex justify-end">
             <Link

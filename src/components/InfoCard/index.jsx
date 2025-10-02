@@ -13,7 +13,7 @@ export default function InfoCard({
     <div className="rounded-2xl bg-white/5 p-5 shadow flex flex-col">
       {/* Texto */}
       <div className={`${textHeight}`}>
-        <h3 className="text-lg font-semibold text-tertiary mb-3">{title}</h3>
+        <h3 className="text-lg  text-tertiary mb-3">{title}</h3>
         <ul className="list-disc list-inside text-quaternary space-y-1 text-sm">
           {items.map((item, idx) => (
             <li key={idx}>{item}</li>

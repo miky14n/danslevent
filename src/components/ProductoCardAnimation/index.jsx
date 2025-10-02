@@ -30,9 +30,7 @@ export default function ProductoCardAnimation({
         {/* Texto oculto */}
         <div className="w-full md:w-[60%] opacity-100 md:opacity-0 md:transform md:translate-x-20 transition-all duration-700 group-hover:opacity-100 group-hover:translate-x-0 text-center md:text-left mt-6 md:mt-0">
           <div className="p-4 sm:p-6 rounded shadow-md ">
-            <h2 className="text-xl sm:text-2xl text-secondary font-bold">
-              {titulo}
-            </h2>
+            <h2 className="text-xl sm:text-2xl text-secondary ">{titulo}</h2>
             <p className="text-secondary footer-font mt-2 w-full md:w-[80%] text-sm sm:text-base">
               {descripcion}
             </p>
@@ -40,7 +38,7 @@ export default function ProductoCardAnimation({
         </div>
 
         {/* Texto vertical */}
-        <span className=" justify-start items-start hidden md:block absolute right-4 top-1/2 -translate-y-1/2 rotate-90 text-secondary font-bold text-xl sm:text-2xl">
+        <span className=" justify-start items-start hidden md:block absolute right-4 top-1/2 -translate-y-1/2 rotate-90 text-secondary  text-xl sm:text-2xl">
           {textoVertical}
         </span>
       </div>

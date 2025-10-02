@@ -27,7 +27,7 @@ export default function VsopProductView() {
     <section className="max-w-screen-2xl mx-auto px-4 md:px-8 py-16 space-y-20 ">
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-1 items-start">
         <div className="space-y-4">
-          <h1 className="text-4xl font-extrabold text-tertiary">BRANDY VSOP</h1>
+          <h1 className="text-4xl  text-tertiary">BRANDY VSOP</h1>
           <p className="text-quaternary leading-relaxed text-lg">
             Elaborado 100% con uva y producido en el área del Sur de Francia,
             con cepas cultivadas en la región de Coñac, nuestro Brandy de
@@ -40,7 +40,7 @@ export default function VsopProductView() {
 
           {/* Cóctel sugerido */}
           <div>
-            <h2 className="text-2xl font-semibold text-tertiary mb-6">
+            <h2 className="text-2xl  text-tertiary mb-6">
               Cóctel sugerido — Crusta
             </h2>
 
@@ -102,7 +102,7 @@ export default function VsopProductView() {
 
       {/* OTRAS OPCIONES */}
       <section className="space-y-8">
-        <h2 className="text-center text-2xl font-semibold text-tertiary">
+        <h2 className="text-center text-2xl  text-tertiary">
           Otras opciones de Cócteles
         </h2>
         <ProductGrid products={cocktails} />

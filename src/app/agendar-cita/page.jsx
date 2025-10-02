@@ -33,7 +33,7 @@ export default function ContactForm() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-normal mt-20  px-4 py-12">
       <div className="text-center max-w-2xl mb-8">
-        <h1 className="text-4xl md:text-4xl font-bold text-quinary">
+        <h1 className="text-4xl md:text-4xl  text-quinary">
           Gracias por contactarse con la familia Dans Le Vent
         </h1>
         <p className="mt-3 text-quaternary text-[20px]">
@@ -88,7 +88,7 @@ export default function ContactForm() {
         <div className="flex justify-center mt-6">
           <button
             type="submit"
-            className="bg-gradient-to-r from-primary to-blue-600 text-white font-semibold px-8 py-3 rounded-md shadow-md hover:opacity-90 transition"
+            className="bg-gradient-to-r from-primary to-blue-600 text-white  px-8 py-3 rounded-md shadow-md hover:opacity-90 transition"
           >
             Agendar
           </button>
