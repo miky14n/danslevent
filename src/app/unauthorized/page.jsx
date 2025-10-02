@@ -15,7 +15,7 @@ export default function Unauthorized() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
-        <h1 className="text-white font-extrabold text-3xl md:text-5xl leading-snug md:leading-tight">
+        <h1 className="text-white  text-3xl md:text-5xl leading-snug md:leading-tight">
           Tú no puedes estar en esta pagina. <br />
           Vuelve por donde viniste.
         </h1>

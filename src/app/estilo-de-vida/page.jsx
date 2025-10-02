@@ -43,9 +43,7 @@ export default function EstiloDeVida() {
   );
   return (
     <section className="max-w-7xl mx-auto px-2 py-12">
-      <h1 className="text-title font-bold mb-8 text-tertiary ">
-        Estilo de vida
-      </h1>
+      <h1 className="text-title  mb-8 text-tertiary ">Estilo de vida</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {lifestyleItems.map((item, index) => (
@@ -65,7 +63,7 @@ export default function EstiloDeVida() {
               renderImage(item)
             )}
             <div className="p-4">
-              <h3 className="font-semibold text-subtitle mb-2 text-tertiary">
+              <h3 className=" text-subtitle mb-2 text-tertiary">
                 {item.title}
               </h3>
               <p className="text-quaternary text-body">{item.description}</p>

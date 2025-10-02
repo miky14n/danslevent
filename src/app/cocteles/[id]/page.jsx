@@ -38,9 +38,7 @@ export default function CocktailDetail({ params }) {
           />
         </div>
         <div className="space-y-4">
-          <h1 className="text-4xl font-extrabold text-tertiary">
-            {cocktail.title}
-          </h1>
+          <h1 className="text-4xl  text-tertiary">{cocktail.title}</h1>
           <p className="text-quaternary leading-relaxed text-lg">
             {cocktail.description}
           </p>
@@ -63,7 +61,7 @@ export default function CocktailDetail({ params }) {
 
       {/* OTRAS OPCIONES */}
       <section className="">
-        <h2 className="text-center text-2xl font-semibold text-tertiary">
+        <h2 className="text-center text-2xl  text-tertiary">
           Otras opciones de Cócteles
         </h2>
         {/*} <ProductGrid products={cocktails} />*/}

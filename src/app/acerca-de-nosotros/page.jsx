@@ -18,7 +18,7 @@ export default function AboutUs() {
 
         {/* Texto centrado */}
         <div className="absolute inset-0 flex flex-col items-start justify-center text-start text-quaternary px-6">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">
+          <h1 className="text-3xl md:text-5xl  mb-4">
             Lo Mejor De La Destileria Francesa
           </h1>
           <p className="max-w-2xl text-lg md:text-xl leading-relaxed">
@@ -62,7 +62,7 @@ export default function AboutUs() {
 
         {/* Texto */}
         <div className="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left px-2 md:px-4">
-          <h1 className="text-3xl md:text-4xl font-semibold text-tertiary mb-4">
+          <h1 className="text-3xl md:text-4xl  text-tertiary mb-4">
             Preguntas frecuentes
           </h1>
           <p className="text-lg md:text-xl text-quaternary leading-relaxed">
@@ -86,13 +86,13 @@ export default function AboutUs() {
       {/* Misión y Visión */}
       <div className="relative w-full flex items-center justify-center py-12">
         <div className="p-8 w-11/12 md:w-10/12 lg:w-9/12 text-quaternary">
-          <h1 className="text-center text-tertiary text-3xl md:text-4xl font-semibold mb-8">
+          <h1 className="text-center text-tertiary text-3xl md:text-4xl  mb-8">
             Quiénes Somos y Hacia Dónde Vamos
           </h1>
 
           <div className="flex flex-col md:flex-row gap-10 md:gap-20 text-quaternary">
             <div className="flex-1">
-              <h2 className="text-2xl font-bold mb-4 text-tertiary">Misión</h2>
+              <h2 className="text-2xl  mb-4 text-tertiary">Misión</h2>
               <p className="leading-relaxed text-lg">
                 Comprometidos con nuestros principios y valores. A través de la
                 integración de talentos, tecnologías de vanguardia y prácticas
@@ -103,7 +103,7 @@ export default function AboutUs() {
             </div>
 
             <div className="flex-1">
-              <h2 className="text-2xl font-bold mb-4 text-tertiary">Visión</h2>
+              <h2 className="text-2xl  mb-4 text-tertiary">Visión</h2>
               <p className="leading-relaxed text-lg">
                 Somos una compañía que impulsa su crecimiento sostenido en la
                 excelencia, calidad e innovación de nuestros productos y

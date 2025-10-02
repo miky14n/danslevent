@@ -55,7 +55,7 @@ export default function EventsSection() {
 
   return (
     <section className="max-w-6xl mx-auto px-6 py-12">
-      <h1 className="text-2xl sm:text-title text-tertiary font-bold mb-8">
+      <h1 className="text-2xl sm:text-title text-tertiary  mb-8">
         Dans Le Vent Presente En Eventos Clave
       </h1>
 
@@ -75,7 +75,7 @@ export default function EventsSection() {
               </div>
               <div className="md:col-span-2 flex flex-col justify-between ">
                 <div>
-                  <h2 className="text-subtitle text-tertiary font-semibold">
+                  <h2 className="text-subtitle text-tertiary ">
                     {event.title}
                   </h2>
                   <p className="mt-2 text-quaternary text-body">

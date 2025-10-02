@@ -50,7 +50,7 @@ export default function AgeVerificationModal() {
           backdrop="blur"
           classNames={{
             base: "footer-font bg-secondary text-quaternary max-w-sm sm:max-w-md rounded-2xl shadow-lg",
-            header: "text-lg sm:text-xl font-bold text-center",
+            header: "text-lg sm:text-xl  text-center",
             body: "sm:text-base leading-relaxed text-center",
             footer: "flex gap-4 justify-center mt-4",
           }}

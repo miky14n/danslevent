@@ -34,7 +34,7 @@ export default function Home() {
       {/* Sección destilería */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-1 p-1 md:p-1">
         <div className="flex flex-col justify-center items-center text-center">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">
+          <h1 className="text-3xl md:text-4xl  mb-4">
             ¿Por qué celebrar junto a Dans Le Vent?
           </h1>
           <p className="text-lg md:text-2xl max-w-3xl mx-auto">
@@ -43,7 +43,7 @@ export default function Home() {
             perfecta para momentos que merecen ser inolvidables.
           </p>
 
-          <h1 className="text-2xl md:text-3xl font-bold mb-4">
+          <h1 className="text-2xl md:text-3xl  mb-4">
             LO MEJOR DE LA DESTILERÍA FRANCESA
           </h1>
           <p className="text-base md:text-xl leading-relaxed text-center items-center">
@@ -79,7 +79,7 @@ export default function Home() {
       {/* Cocteles */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-1 md:p-1">
         <div className="flex flex-col justify-center items-center text-center md:text-left">
-          <h1 className="text-2xl  md:text-3xl font-bold mb-4">CÓCTELES</h1>
+          <h1 className="text-2xl  md:text-3xl  mb-4">CÓCTELES</h1>
           <p className="text-center md:text-xl leading-relaxed max-w-md mx-auto md:mx-0">
             El arte de crear recetas junto a Dans Le Vent, dejando volar la
             imaginación.
@@ -108,9 +108,7 @@ export default function Home() {
           />
         </div>
         <div className="flex flex-col text-center md:text-left">
-          <h1 className="text-2xl md:text-3xl font-bold mb-4">
-            NUESTRO LEGADO
-          </h1>
+          <h1 className="text-2xl md:text-3xl  mb-4">NUESTRO LEGADO</h1>
           <h2 className="text-lg md:text-2xl leading-relaxed mb-4 max-w-md mx-auto md:mx-0">
             Una tradición francesa reinterpretada con elegancia
           </h2>
