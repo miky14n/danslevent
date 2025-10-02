@@ -1,20 +1,17 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Close, HamburgerMenu } from "../Icons";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isAdult, setIsAdult] = useState();
-  useEffect(() => {
-    const storedValue = localStorage.getItem("isAdult");
-    setIsAdult(storedValue);
-  }, []);
+  const pathname = usePathname();
   return (
     <nav className="bg-secondary footer-font sticky top-0 w-full z-50 text-[19px]">
-      {isAdult && (
+      {pathname !== "/unauthorized" && (
         <div className="max-w-screen-xl mx-auto px-6">
           {/* Barra superior */}
           <div className="flex items-center justify-between h-25 relative">

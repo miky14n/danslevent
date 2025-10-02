@@ -1,19 +1,14 @@
 "use client";
 import Link from "next/link";
-import { FacebookIc, InstagramIc, Tiktok } from "../Icons";
 import NewsletterForm from "../NewsletterForm";
-import { useState, useEffect } from "react";
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 // components/Footer.jsx
 export default function Footer() {
-  const [isAdult, setIsAdult] = useState();
-  useEffect(() => {
-    const storedValue = localStorage.getItem("isAdult");
-    setIsAdult(storedValue);
-  }, []);
+  const pathname = usePathname();
   return (
     <footer className="bg-secondary text-white p-8 footer-font">
-      {isAdult && (
+      {pathname !== "/unauthorized" && (
         <div>
           <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-8">
             {/* Seguinos */}
