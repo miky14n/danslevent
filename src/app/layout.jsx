@@ -81,6 +81,22 @@ export default function RootLayout({ children }) {
                   "Brandy premium francés de sabor sofisticado y versátil, perfecto para cócteles y degustación.",
                 brand: "Dans Le Vent",
               },
+              brand: {
+                "@type": "Brand",
+                name: "Dans Le Vent",
+              },
+              offers: {
+                "@type": "Offer",
+                url: "https://dansleventfrance.com",
+                priceCurrency: "BOB",
+                price: "200.00",
+                availability: "https://schema.org/InStock",
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.8",
+                reviewCount: "127",
+              },
             }),
           }}
         />
