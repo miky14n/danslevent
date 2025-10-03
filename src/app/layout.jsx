@@ -2,13 +2,6 @@ import "./globals.css";
 import { Providers } from "./providers/provider";
 import NavbarDLV from "@/components/NavbarDLV";
 import Footer from "@/components/Footer";
-
-import ModalAlert from "@/components/ModalAlert";
-
-import "./globals.css";
-import { Providers } from "./providers/provider";
-import NavbarDLV from "@/components/NavbarDLV";
-import Footer from "@/components/Footer";
 import ModalAlert from "@/components/ModalAlert";
 
 export const metadata = {
